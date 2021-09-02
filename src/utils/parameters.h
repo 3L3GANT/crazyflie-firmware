@@ -14,7 +14,8 @@ const float I_yy = 16.0e-6; // kg.m^2
 const float I_zz = 29.0e-6; // kg.m^2
 const float l = 33.0e-3;    // m
 
-// Constante de sustentação (lift constant)
-const float kl = 1.726e-08; //N*s^2
+// Constante do Drone
+const float kl = 1.726e-08; //(N*s^2) Constante de sustentação (lift constant)
+const float kd = 8.939e-10; //(N*m*s^2) Constante de arrasto (drag constant)
 
 #endif
