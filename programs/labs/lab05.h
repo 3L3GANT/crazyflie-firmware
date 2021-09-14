@@ -57,6 +57,21 @@ int main()
     //desligando motores
     actuate(0, 0, 0, 0); 
 
+    wait(3);
+
+//-------------------------------------------------
+
+    //testes de atuador:
+
+    //actuate(0.2, 0, 0, 0); //teste 1
+    //actuate(0, 0.005, 0, 0); //teste 2
+    //actuate(0, 0, 0.005, 0); //teste 3
+    actuate(0, 0, 0, 0.001); //teste 4
+
+    wait(5);
+
+    //desligando motores
+    actuate(0, 0, 0, 0);
 
 
     while(true)
