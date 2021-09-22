@@ -22,13 +22,13 @@ PwmOut motor_4(MOTOR4);
 // Converts desired angular velocity (rad/s) to PWM signal (%)
 float control_motor ( float omega_r )   //função para controlar velocidade angular desejada (rad/s -> PWM)
  {
-     float a2 = 1.174e-07; //valores da função de transferência
-     float a1 = 3.274e-12;
-     float a0 = 0;
+    float a2 = 1.174e-07; //valores da função de transferência
+    float a1 = 3.274e-12;
+    float a0 = 0;
 
-     float PWM = (a2*(omega_r*omega_r)) + (a1*omega_r) + a0;
+    float PWM = (a2*(omega_r*omega_r)) + (a1*omega_r) + a0;
      
-     return PWM; 
+    return PWM; 
  }
 
 
