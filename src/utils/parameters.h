@@ -18,4 +18,10 @@ const float l = 33.0e-3;    // m
 const float kl = 1.726e-08; //(N*s^2) Constante de sustentação (lift constant)
 const float kd = 8.939e-10; //(N*m*s^2) Constante de arrasto (drag constant)
 
+//parâmetros do filtro passa-baixas do estimador de atitude
+const float wc = 0.1; //frequência de corte (rad/s)
+const float dt = 0.002; //tempo de amostragem (2ms)
+const float alpha = (wc*dt)/(1+(wc*dt)); //fator de suavização
+
+
 #endif

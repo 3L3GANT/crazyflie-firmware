@@ -1,6 +1,6 @@
 #include "mbed.h"
 #include "crazyflie.h"
-#include "mixer.h"  // dar um jeito de colocar o mixer.h em crazyflie.h sem redundancia
+// #include "mixer.h"  // dar um jeito de colocar o mixer.h em crazyflie.h sem redundancia
 
 
 //Declara mixer
