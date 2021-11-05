@@ -30,6 +30,7 @@ class AttitudeEstimator
     float p_bias;
     float q_bias; 
     float r_bias;
+    int sign_az;
 };
 
 # endif
