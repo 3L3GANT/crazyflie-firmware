@@ -26,4 +26,7 @@
 //Inclui a classe estimador de atitude
 #include "attitude_estimator.h"
 
+//Inclui a classe controlador de atitude
+#include "attitude_controller.h"
+
 #endif

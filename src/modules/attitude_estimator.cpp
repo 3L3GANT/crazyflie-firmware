@@ -78,6 +78,4 @@ void AttitudeEstimator :: estimate ()
     //float psi_g = psi_g+(r*dt); //solução linear
     //float psi_g = psi+(sin(phi)*(1/cos(theta))*q+cos(phi)*(1/cos(theta))*r)*dt; 
     psi = psi_g;
-
-    //Implementar soluções não lineares para o theta_a e phi, theta e psi _g.
 }
