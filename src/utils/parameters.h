@@ -28,7 +28,7 @@ const float alpha = (wc*dt)/(1+(wc*dt)); //fator de suavização
 const float kp_rp = 240.28; //ganho proporcional de roll e pitch (phi e theta)
 const float kd_rp = 26.67; //ganho derivativo de roll e pitch (phi e theta)
 
-const float kp_psi = 0.0; //ganho proporcional de yaw (psi)
-const float kd_psi = 0.0; //ganho derivativo de yaw (psi)
+const float kp_psi = 93.8; //ganho proporcional de yaw (psi)
+const float kd_psi = 16.0; //ganho derivativo de yaw (psi)
 
 #endif
