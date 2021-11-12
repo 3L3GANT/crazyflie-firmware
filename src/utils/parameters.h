@@ -33,4 +33,15 @@ const float kd_rp = 26.67; //ganho derivativo de roll e pitch (phi e theta)
 const float kp_psi = 93.8; //ganho proporcional de yaw (psi)
 const float kd_psi = 16.0; //ganho derivativo de yaw (psi)
 
+//parâmetros para o estimador vertical (altitude)
+const float dt_range = 0.05; //tempo de amostragem do sensor de range
+
+//parâmetros do observador de estados do estimador vertical (altitude)
+const float wc_range = 10; //frequência de corte (rad/s)
+const float zeta = sqrt(2)/2; //fator de amortecimento
+
+const float l1 = wc_range*wc_range; //ganho do estimador
+const float l2 =2*zeta*wc_range;
+
+
 #endif
