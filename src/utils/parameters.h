@@ -25,7 +25,7 @@ const float alpha = (wc*dt)/(1+(wc*dt)); //fator de suavização
 
 //Ganhos dos controladores de atitude 
 // Os ganhos de roll e pitch (phi e theta) devem ser iguais pela simetria do drone
-//%OS = % e Ts = s 
+//%OS = 1% e Ts = 0.3s 
 const float kp_rp = 260.51; //ganho proporcional de roll e pitch (phi e theta)
 const float kd_rp = 26.67; //ganho derivativo de roll e pitch (phi e theta)
 
@@ -42,6 +42,11 @@ const float zeta = sqrt(2)/2; //fator de amortecimento
 
 const float l1 = wc_range*wc_range; //ganho do estimador
 const float l2 =2*zeta*wc_range;
+
+//Ganhos do controlador vertical
+//%OS = % e Ts = s 
+const float kp_z = 5.86;
+const float kd_z = 3.42;
 
 
 #endif

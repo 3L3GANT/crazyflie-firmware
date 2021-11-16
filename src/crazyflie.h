@@ -32,4 +32,7 @@
 //Inclui a classe estimador vertical (altura)
 #include "vertical_estimator.h"
 
+//Inclui a classe controlador vertical
+#include "vertical_controller.h"
+
 #endif
