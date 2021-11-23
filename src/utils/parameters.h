@@ -34,7 +34,7 @@ const float kp_psi = 93.8; //ganho proporcional de yaw (psi)
 const float kd_psi = 16.0; //ganho derivativo de yaw (psi)
 
 //parâmetros para o estimador vertical (altitude)
-const float dt_range = 0.05; //tempo de amostragem do sensor de range
+const float dt_range = 0.05; //tempo de amostragem do sensor de range (20ms)
 
 //parâmetros do observador de estados do estimador vertical (altitude)
 const float wc_range = 10; //frequência de corte (rad/s)
@@ -47,6 +47,11 @@ const float l2 =2*zeta*wc_range;
 //%OS = % e Ts = s 
 const float kp_z = 5.86;
 const float kd_z = 3.42;
+
+//Parâmetros do estimador horizontal
+const float sigma = 2*tan(42/2)/(420*dt);
+const float wc_hz = 50; //frequência de corte do estimador horizontal (rad/s)
+const float l_hz = 1; //ganho do estimador horizontal (observador de estados)
 
 
 #endif

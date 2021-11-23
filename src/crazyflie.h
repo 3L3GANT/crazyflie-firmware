@@ -21,7 +21,8 @@
 
 
 //Inclui a classe mixer e suas funções 
-#include "modules/mixer.h" //???????????? consertar bug de redundancia de chamada
+#include "modules/mixer.h"
+
 
 //Inclui a classe estimador de atitude
 #include "attitude_estimator.h"
@@ -29,10 +30,18 @@
 //Inclui a classe controlador de atitude
 #include "attitude_controller.h"
 
+
 //Inclui a classe estimador vertical (altura)
 #include "vertical_estimator.h"
 
 //Inclui a classe controlador vertical
 #include "vertical_controller.h"
+
+
+//Inclui a classe estimador horizontal
+#include "horizontal_estimator.h"
+
+//Incluia a classe controlador horizontal
+//#include "horizontal_controller.h"
 
 #endif
