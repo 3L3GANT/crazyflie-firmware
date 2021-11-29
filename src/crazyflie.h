@@ -42,6 +42,6 @@
 #include "horizontal_estimator.h"
 
 //Incluia a classe controlador horizontal
-//#include "horizontal_controller.h"
+#include "horizontal_controller.h"
 
 #endif
