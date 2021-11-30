@@ -41,7 +41,7 @@ const float wc_range = 10; //frequência de corte (rad/s)
 const float zeta = sqrt(2)/2; //fator de amortecimento
 
 const float l1 = wc_range*wc_range; //ganho do estimador
-const float l2 =2*zeta*wc_range;
+const float l2 = 2*zeta*wc_range;
 
 //Ganhos do controlador vertical
 //%OS = 0.5% e Ts = 2s 
@@ -54,8 +54,8 @@ const float wc_hz = 50; //frequência de corte do estimador horizontal (rad/s)
 const float l_hz = wc_hz; //ganho do estimador horizontal (observador de estados)
 
 //Ganhos do controlador horizontal (Regulador de estados)
-//%OS = 0.5% e Ts = 5s
-const float kp_hz = 0.86; //Kp de X e Y
-const float kd_hz = 1.60; //Kd de X e Y
+//%OS = 0.5% e Ts = -s
+const float kp_hz = 2.40; //Kp de X e Y
+const float kd_hz = 2.67; //Kd de X e Y
 
 #endif

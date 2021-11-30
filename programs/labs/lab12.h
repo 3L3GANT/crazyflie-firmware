@@ -25,7 +25,7 @@ int main()
 {
 
     // Set references
-    float z_r = 0.5;
+    float z_r = 0.3;
     float x_r = 0.0;
     float y_r = 0.0;
     float psi_r = 0.0;
@@ -41,7 +41,7 @@ int main()
 
     // Arm motors and run controller while stable
     mixer.arm();
-    while(abs(att_est.phi) <= pi/4.0 && abs(att_est.theta) <= pi/4.0 && abs(att_est.p) <= 4.0*pi && abs (att_est.q) <= 4.0*pi && abs(att_est.r) <= 4.0*pi)
+    while(abs(att_est.phi) <= pi/4.0 && abs(att_est.theta) <= pi/4.0 && abs(att_est.p) <= 4.0*pi && abs(att_est.q) <= 4.0*pi && abs(att_est.r) <= 4.0*pi)
     {
     if (flag)
     {

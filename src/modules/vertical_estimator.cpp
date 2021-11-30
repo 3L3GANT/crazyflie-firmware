@@ -1,20 +1,20 @@
 # include "vertical_estimator.h"
 
 // Class constructor
-VerticalEstimator :: VerticalEstimator () : range (E_SDA, E_SCL)
+VerticalEstimator::VerticalEstimator() : range(E_SDA, E_SCL)
 {
     z = 0;
     w = 0;
 }
 
 // Initialize class
-void VerticalEstimator :: init()
+void VerticalEstimator::init()
 {
     range.init();
 }
 
 // Predict vertical position and velocity from model
-void VerticalEstimator :: predict(float f_t)
+void VerticalEstimator::predict(float f_t)
 {
     z = z+w*dt;
     if (z>0.05)
@@ -24,7 +24,7 @@ void VerticalEstimator :: predict(float f_t)
 }
 
 // Correct vertical position and velocity with measurement
-void VerticalEstimator :: correct(float phi, float theta)
+void VerticalEstimator::correct(float phi, float theta)
 {
     range.read();
     if (range.d < 2.0)
