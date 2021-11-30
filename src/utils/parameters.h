@@ -54,8 +54,8 @@ const float wc_hz = 50; //frequência de corte do estimador horizontal (rad/s)
 const float l_hz = wc_hz; //ganho do estimador horizontal (observador de estados)
 
 //Ganhos do controlador horizontal (Regulador de estados)
-//%OS = 0.5% e Ts = 2.5
-const float kp_hz = 3.46; //Kp de X e Y
-const float kd_hz = 3.20; //Kd de X e Y
+//%OS = 0.5% e Ts = 5s
+const float kp_hz = 0.86; //Kp de X e Y
+const float kd_hz = 1.60; //Kd de X e Y
 
 #endif
