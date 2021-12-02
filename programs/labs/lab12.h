@@ -25,7 +25,7 @@ int main()
 {
 
     // Set references
-    float z_r = 0.3;
+    float z_r = 0.35;
     float x_r = 0.0;
     float y_r = 0.0;
     float psi_r = 0.0;
@@ -37,7 +37,7 @@ int main()
 
     // Initialize interrupts
     tic.attach(& callback, dt);
-    tic_range.attach (& callback_range , dt_range );
+    tic_range.attach (& callback_range, dt_range );
 
     // Arm motors and run controller while stable
     mixer.arm();

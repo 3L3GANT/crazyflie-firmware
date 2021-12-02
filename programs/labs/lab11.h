@@ -23,9 +23,9 @@ void callback_range() {flag_range = true;}
 int main()
 {
     // Initialize estimators objects
-    att_est.init ();
-    ver_est.init ();
-    hor_est.init ();
+    att_est.init();
+    ver_est.init();
+    hor_est.init();
 
     // Initialize interrupts
     tic.attach (& callback , dt);
